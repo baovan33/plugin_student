@@ -1,0 +1,11 @@
+.zend-widget-css-simple {
+    border: 1px solid black;
+}
+
+.zend-wg-bg-blue {
+    background-color: blue !important;
+}
+
+.zend-wg-bg-red {
+    background-color: red;
+}
