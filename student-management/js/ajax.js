@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('#subjectSelect').change(function() {
+    $('#subjectSelect').blur(function() {
         let subject_id = $(this).val();
         let dataObj    = {
             'action' : 'get_teacher',
