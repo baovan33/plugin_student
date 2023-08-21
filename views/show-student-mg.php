@@ -8,7 +8,6 @@
       <th scope="col">Môn học</th>
       <th scope="col">Giáo viên hướng dẫn</th>
       
-      <!-- <th scope="col">Tên giáo viên</th> -->
     </tr>
   </thead>
   <tbody>

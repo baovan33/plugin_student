@@ -39,25 +39,4 @@
     
 </div>
 
-<?php
-if (isset($_POST['submit_student'])) {
-
-    $student_name = sanitize_text_field($_POST['student_name']);
-    $student_date = sanitize_text_field($_POST['student_date']);
-    $teach_id     = $_POST['teacher_id'];
-    $subject_id   = $_POST['subject_id'];
-    $table_name   = $wpdb->prefix . "student_mg";
-    $wpdb->insert(
-        $table_name,
-        array(
-            'name'          => $student_name,
-            'date'          => $student_date,
-            'teach_id'      => $teach_id, 
-            'subject_id'    => $subject_id
-        )
-    );
-    if ($wpdb->insert_id) {
-        add_settings_error('student_management', 'student_added', 'Student added successfully', 'updated');
-    }
-}
-?>
+<?php  $this->createStudent(); ?>
